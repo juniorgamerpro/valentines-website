@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Valentine's Day Site</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background: #ffe6e6; }
+        .heart { color: red; font-size: 50px; animation: bounce 1s infinite; }
+        @keyframes bounce { 50% { transform: translateY(-10px); } }
+    </style>
+</head>
+<body>
+    <h1>Happy Valentine's Day! ❤️</h1>
+    <p>Roses are red, Violets are blue, Here's a website, Made just for you!</p>
+    <button onclick="showJoke()">Click for a Valentine's Joke</button>
+    <p id="joke"></p>
+    <script>
+        function showJoke() {
+            const jokes = ["Why did the skeleton go to the party alone? He had no body to go with!", "Do you have a map? Because I keep getting lost in your eyes!"];
+            document.getElementById('joke').innerText = jokes[Math.floor(Math.random() * jokes.length)];
+        }
+    </script>
+</body>
+</html>
